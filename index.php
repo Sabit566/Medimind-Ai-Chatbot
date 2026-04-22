@@ -111,3 +111,29 @@ nav{position:fixed;top:0;width:100%;z-index:900;height:68px;display:flex;align-i
 .stats-bar{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:50px;max-width:480px}
 .stat-item .num{font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:var(--teal);line-height:1}
 .stat-item .lbl{color:var(--text-muted);font-size:0.78rem;margin-top:4px}
+
+/* ══════════════════════════════════════════
+   SECTION COMMON
+══════════════════════════════════════════ */
+.section{padding:80px 56px}
+.sec-tag{color:var(--teal);font-size:0.75rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:10px}
+.sec-title{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,3vw,2.6rem);font-weight:700;margin-bottom:14px}
+.sec-sub{color:var(--text-muted);font-size:0.97rem;line-height:1.75;max-width:520px;margin-bottom:40px}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:20px;margin-bottom:36px}
+
+/* Cards Grid */
+.grid-3{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px}
+.grid-2{display:grid;grid-template-columns:repeat(auto-fill,minmax(440px,1fr));gap:28px}
+.card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;transition:var(--transition);cursor:pointer}
+.card:hover{transform:translateY(-5px);border-color:var(--border-t);box-shadow:0 20px 60px rgba(0,0,0,.18)}
+.card-img{height:200px;overflow:hidden;position:relative}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.card:hover .card-img img{transform:scale(1.04)}
+.card-img-overlay{position:absolute;inset:0;background:linear-gradient(to top,var(--bg-card) 0%,transparent 50%)}
+.card-body{padding:24px}
+.card-body h3{font-family:'Playfair Display',serif;font-size:1.15rem;margin-bottom:8px}
+.card-body p{color:var(--text-muted);font-size:0.87rem;line-height:1.65}
+.tag-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.tag{background:var(--tag-bg);color:var(--teal);border-radius:20px;padding:3px 12px;font-size:0.74rem;font-weight:600}
+.tag.r{background:rgba(255,107,107,.1);color:var(--accent)}
+.tag.g{background:rgba(255,201,71,.1);color:var(--gold)}
