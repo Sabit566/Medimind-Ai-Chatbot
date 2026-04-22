@@ -344,3 +344,506 @@ footer{background:var(--bg-card);border-top:1px solid var(--border);padding:44px
     <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme" aria-label="Toggle dark/light mode"></button>
   </div>
 </nav>
+
+<!-- ══════════════════════════════════════
+   HOME PAGE
+══════════════════════════════════════ -->
+<div class="page active" id="page-home">
+  <div class="hero">
+    <div class="hero-left">
+      <div class="hero-badge"><span></span> AI-Powered Health Intelligence</div>
+      <h1>Your Health,<br><em>Reimagined</em><br>with Smart Care</h1>
+      <p class="hero-desc">Comprehensive disease guides, verified medicine information, evidence-based prevention strategies and treatment pathways — all in one trusted platform.</p>
+      <div class="hero-cta-row">
+        <button class="btn-p" onclick="go('diseases')">Explore Diseases</button>
+        <button class="btn-g" onclick="go('medicine')">Search Medicines</button>
+      </div>
+      <div class="stats-bar">
+        <div class="stat-item"><div class="num">500+</div><div class="lbl">Diseases Covered</div></div>
+        <div class="stat-item"><div class="num">10k+</div><div class="lbl">Medicines Listed</div></div>
+        <div class="stat-item"><div class="num">98%</div><div class="lbl">Verified Info</div></div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="img01.jpeg" alt="Modern healthcare">
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="sec-tag">What We Offer</div>
+    <h2 class="sec-title">Everything You Need for Better Health</h2>
+    <p class="sec-sub">From disease encyclopedias to medicine databases, prevention timelines and cutting-edge treatment protocols.</p>
+    <div class="feat-grid">
+      <div class="feat-card" onclick="go('diseases')">
+        <div class="feat-icon fi-r">🦠</div>
+        <h3>Disease Library</h3>
+        <p>Detailed profiles on 500+ diseases — symptoms, causes, risk factors and more.</p>
+      </div>
+      <div class="feat-card" onclick="go('medicine')">
+        <div class="feat-icon fi-t">💊</div>
+        <h3>Medicine Database</h3>
+        <p>Live searchable drug database with prices in TK, generic names and dosage info.</p>
+      </div>
+      <div class="feat-card" onclick="go('prevention')">
+        <div class="feat-icon fi-g">🛡️</div>
+        <h3>Prevention Guide</h3>
+        <p>Science-backed strategies to dramatically reduce your risk of major diseases.</p>
+      </div>
+      <div class="feat-card" onclick="go('cure')">
+        <div class="feat-icon fi-b">🔬</div>
+        <h3>Cure & Treatment</h3>
+        <p>Modern and emerging treatment protocols for a wide range of conditions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials / Real humans -->
+  <section class="section" style="padding-top:0">
+    <div class="sec-tag">Doctor Stories</div>
+    <h2 class="sec-title">Trusted by Real People</h2>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-img">
+          <img src="img15.jpg" alt="Patient">
+          <div class="card-img-overlay"></div>
+        </div>
+        <div class="card-body">
+          <h3>Dr. Rahim Uddin, 61</h3>
+          <p>"MediCare helped me understand my diabetes medication and make better dietary choices. The medicine prices are very helpful!"</p>
+          <div class="tag-row"><span class="tag">Diabetes Patient</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="img02.jpg" alt="Patient">
+          <div class="card-img-overlay"></div>
+        </div>
+        <div class="card-body">
+          <h3>Dr. Tajkia Haque, 30</h3>
+          <p>"I used the prevention guide during my pregnancy. The screening timeline helped me stay on track with all my appointments."</p>
+          <div class="tag-row"><span class="tag">New Mother</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="img03.jpg" alt="Patient">
+          <div class="card-img-overlay"></div>
+        </div>
+        <div class="card-body">
+          <h3>Dr. Karim Hossain, 38</h3>
+          <p>"The heart disease information is comprehensive and easy to understand. Recommended it to my whole family."</p>
+          <div class="tag-row"><span class="tag r">Cardiac Care</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-brand">
+      <div class="logo">MediCare</div>
+      <p>Your trusted health & wellness hub. Information is for educational purposes only — always consult a licensed physician.</p>
+    </div>
+    <div class="footer-links">
+      <a onclick="go('diseases')">Diseases</a>
+      <a onclick="go('medicine')">Medicine</a>
+      <a onclick="go('prevention')">Prevention</a>
+      <a onclick="go('cure')">Treatment</a>
+    </div>
+    <p class="footer-copy">© 2026 MediCare. All rights reserved. Not a substitute for professional medical advice.</p>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════
+   DISEASES PAGE
+══════════════════════════════════════ -->
+<div class="page" id="page-diseases">
+  <section class="section">
+    <div class="sec-tag">Encyclopedia</div>
+    <h2 class="sec-title">Disease Library</h2>
+    <p class="sec-sub">Browse comprehensive profiles of diseases, conditions and health disorders with detailed medical information.</p>
+    <div class="grid-3">
+
+      <div class="dis-card">
+        <div class="dis-img"><img src="img14.jpg" alt="Heart"><div class="dis-img-ov"></div></div>
+        <div class="dis-body"><h3>Cardiovascular Disease</h3><p>Heart disease encompasses conditions affecting the heart and blood vessels — coronary artery disease, heart failure, arrhythmias and stroke.</p><div class="tag-row"><span class="tag r">High Risk</span><span class="tag">Chronic</span></div></div>
+      </div>
+
+      <div class="dis-card">
+        <div class="dis-img"><img src="img13.jpg" alt="Brain"><div class="dis-img-ov"></div></div>
+        <div class="dis-body"><h3>Neurological Disorders</h3><p>Conditions affecting the brain and nervous system — Alzheimer's, Parkinson's disease, epilepsy, multiple sclerosis and stroke.</p><div class="tag-row"><span class="tag">Complex</span><span class="tag g">Research Active</span></div></div>
+      </div>
+
+      <div class="dis-card">
+        <div class="dis-img"><img src="img12.jpg" alt="Respiratory"><div class="dis-img-ov"></div></div>
+        <div class="dis-body"><h3>Respiratory Diseases</h3><p>Lung and airway conditions — asthma, COPD, pneumonia, tuberculosis and lung cancer with detailed treatment options and prevention.</p><div class="tag-row"><span class="tag r">Common</span><span class="tag">Treatable</span></div></div>
+      </div>
+
+      <div class="dis-card">
+        <div class="dis-img"><img src="img11.jpg" alt="Diabetes"><div class="dis-img-ov"></div></div>
+        <div class="dis-body"><h3>Diabetes Mellitus</h3><p>Metabolic disorder characterized by high blood sugar. Type 1 (autoimmune) and Type 2 (lifestyle-related) with management strategies and medication guides.</p><div class="tag-row"><span class="tag">Manageable</span><span class="tag g">Lifestyle</span></div></div>
+      </div>
+
+      <div class="dis-card">
+        <div class="dis-img"><img src="img10.jpg" alt="Infection"><div class="dis-img-ov"></div></div>
+        <div class="dis-body"><h3>Infectious Diseases</h3><p>Bacterial, viral, fungal and parasitic infections — influenza, HIV, COVID-19, malaria, dengue and typhoid with prevention and treatment protocols.</p><div class="tag-row"><span class="tag">Preventable</span><span class="tag r">Contagious</span></div></div>
+      </div>
+
+      <div class="dis-card">
+        <div class="dis-img"><img src="img09.jpeg" alt="Arthritis"><div class="dis-img-ov"></div></div>
+        <div class="dis-body"><h3>Musculoskeletal</h3><p>Conditions affecting bones, muscles and joints — arthritis, osteoporosis, fibromyalgia, gout and chronic back pain with physiotherapy options.</p><div class="tag-row"><span class="tag">Age-related</span><span class="tag">Chronic</span></div></div>
+      </div>
+
+      <div class="dis-card">
+        <div class="dis-img"><img src="img08.jpg" alt="Cancer"><div class="dis-img-ov"></div></div>
+        <div class="dis-body"><h3>Cancer (Oncology)</h3><p>Malignant tumors affecting various organs — breast, lung, colon and prostate cancers with staging, immunotherapy and surgical pathways.</p><div class="tag-row"><span class="tag r">Critical</span><span class="tag g">Emerging Therapies</span></div></div>
+      </div>
+
+      <div class="dis-card">
+        <div class="dis-img"><img src="img07.jpg" alt="Mental Health"><div class="dis-img-ov"></div></div>
+        <div class="dis-body"><h3>Mental Health</h3><p>Depression, anxiety disorders, bipolar disorder, schizophrenia and PTSD — holistic treatment combining therapy, medication and lifestyle support.</p><div class="tag-row"><span class="tag">Very Common</span><span class="tag g">Highly Treatable</span></div></div>
+      </div>
+
+      <div class="dis-card">
+        <div class="dis-img"><img src="img06.jpg" alt="Autoimmune"><div class="dis-img-ov"></div></div>
+        <div class="dis-body"><h3>Autoimmune Diseases</h3><p>Conditions where the immune system attacks its own tissues — lupus, rheumatoid arthritis, celiac disease and Hashimoto's thyroiditis.</p><div class="tag-row"><span class="tag">Complex</span><span class="tag">Lifelong Care</span></div></div>
+      </div>
+
+    </div>
+  </section>
+  <footer>
+    <div class="footer-brand"><div class="logo">MediCare</div><p>Educational information only. Always consult a physician for diagnosis.</p></div>
+    <div class="footer-links"><a onclick="go('home')">Home</a><a onclick="go('medicine')">Medicine DB</a><a onclick="go('prevention')">Prevention</a></div>
+    <p class="footer-copy">© 2026 MediCare. All rights reserved.</p>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════
+   MEDICINE PAGE
+══════════════════════════════════════ -->
+<div class="page" id="page-medicine">
+  <section class="section">
+    <div class="sec-head">
+      <div>
+        <div class="sec-tag">Drug Database</div>
+        <h2 class="sec-title">Medicine Search</h2>
+        <p class="sec-sub">Search our verified medicine database — brand name, generic name, price per tablet in TK and categories.</p>
+      </div>
+    </div>
+
+    <div class="db-notice" id="dbNotice" style="display:none">
+      ⚠️ <div><strong>Database not connected.</strong> To enable live search, set up MySQL and import <code>schema.sql</code>. Showing demo data.</div>
+    </div>
+
+    <div class="med-search-bar">
+      <input class="search-input" id="medQ" placeholder="🔍  Search by medicine name, generic name or category..." onkeydown="if(event.key==='Enter')searchMed()">
+      <select class="search-input" id="medCat" style="min-width:180px">
+        <option value="">All Categories</option>
+        <option>Antibiotic</option>
+        <option>Cardiovascular</option>
+        <option>Analgesic</option>
+        <option>NSAID</option>
+        <option>Antidiabetic</option>
+        <option>Respiratory</option>
+        <option>Antihistamine</option>
+        <option>Antidepressant</option>
+        <option>Anxiolytic</option>
+        <option>Antipsychotic</option>
+        <option>GI / PPI</option>
+        <option>Antiemetic</option>
+        <option>Antifungal</option>
+        <option>Antiviral</option>
+        <option>Antimalarial</option>
+        <option>Antiparasitic</option>
+        <option>Vitamin</option>
+        <option>Supplement</option>
+        <option>Corticosteroid</option>
+        <option>Thyroid</option>
+        <option>Bisphosphonate</option>
+        <option>Antigout</option>
+        <option>DMARD</option>
+        <option>Antiepileptic</option>
+        <option>Anticoagulant</option>
+        <option>Dermatology</option>
+        <option>Urological</option>
+        <option>Opioid Analgesic</option>
+        <option>Hormonal</option>
+        <option>Contraceptive</option>
+        <option>Addiction</option>
+      </select>
+      <button class="btn-search" onclick="searchMed()">Search</button>
+    </div>
+
+    <div id="medResult">
+      <div class="loading-row"><div class="spinner"></div> Loading medicines...</div>
+    </div>
+
+    <div class="med-pagination" id="medPag" style="display:none">
+      <div class="pag-info" id="pagInfo"></div>
+      <div class="pag-btns" id="pagBtns"></div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-brand"><div class="logo">MediCare</div><p>Never self-medicate. Always follow your doctor's prescription.</p></div>
+    <div class="footer-links"><a onclick="go('home')">Home</a><a onclick="go('diseases')">Diseases</a><a onclick="go('prevention')">Prevention</a></div>
+    <p class="footer-copy">© 2026 MediCare. All rights reserved.</p>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════
+   PREVENTION PAGE
+══════════════════════════════════════ -->
+<div class="page" id="page-prevention">
+  <section class="section">
+    <div class="sec-tag">Stay Healthy</div>
+    <h2 class="sec-title">Prevention is Better Than Cure</h2>
+    <p class="sec-sub">Science-backed strategies that dramatically reduce your risk of major diseases — backed by WHO and medical research.</p>
+    <div class="tips-grid">
+      <div class="tip-card"><div class="tip-icon">🥗</div><h3>Balanced Nutrition</h3><p>A diet rich in fruits, vegetables, whole grains and lean proteins reduces chronic disease risk by up to 80%.</p></div>
+      <div class="tip-card"><div class="tip-icon">🏃</div><h3>Regular Exercise</h3><p>150 minutes of moderate aerobic activity weekly strengthens the heart, boosts immunity and mental health.</p></div>
+      <div class="tip-card"><div class="tip-icon">😴</div><h3>Quality Sleep</h3><p>7–9 hours of quality sleep nightly is essential for immune function, hormonal balance and brain health.</p></div>
+      <div class="tip-card"><div class="tip-icon">🚭</div><h3>Avoid Tobacco</h3><p>Quitting smoking reduces risk of cancer, heart disease and lung disease by 50% within just five years.</p></div>
+      <div class="tip-card"><div class="tip-icon">🧘</div><h3>Stress Management</h3><p>Chronic stress raises cortisol, harming the immune system. Meditation, yoga and therapy help significantly.</p></div>
+      <div class="tip-card"><div class="tip-icon">💉</div><h3>Vaccinations</h3><p>Stay up to date with recommended vaccines. They protect you and your entire community from infectious diseases.</p></div>
+      <div class="tip-card"><div class="tip-icon">💧</div><h3>Stay Hydrated</h3><p>Drink 8–10 glasses of water daily to maintain kidney health, cognitive function and cellular metabolism.</p></div>
+      <div class="tip-card"><div class="tip-icon">🩺</div><h3>Regular Check-ups</h3><p>Annual physicals and routine blood work catch problems before they become serious — prevention saves lives.</p></div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════════════════════════════
+   CURE & TREATMENT PAGE
+══════════════════════════════════════ -->
+<div class="page" id="page-cure">
+
+  <!-- Hero Banner -->
+  <div class="cure-hero">
+    <img class="cure-hero-bg" src="img04.jpg" alt="Cure & Treatment">
+    <div class="cure-hero-overlay"></div>
+    <div class="cure-hero-content">
+      <div class="sec-tag">Treatment Pathways</div>
+      <h1>Cure &amp; Treatment<br>Options</h1>
+      <p>Evidence-based treatment protocols across modern medicine, traditional approaches and emerging breakthrough therapies.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="split">
+      <div>
+        <p style="color:var(--text-muted);line-height:1.85;margin-bottom:22px">Modern medicine combines pharmacotherapy, surgical interventions, lifestyle modifications, psychological support and cutting-edge technologies like gene therapy and immunotherapy to deliver holistic healing pathways personalised to each patient.</p>
+
+    <div class="tab-row">
+      <button class="tab-btn active" onclick="switchTab('pharmaceutical',this)">Pharmaceutical</button>
+      <button class="tab-btn" onclick="switchTab('surgical',this)">Surgical</button>
+      <button class="tab-btn" onclick="switchTab('holistic',this)">Holistic</button>
+      <button class="tab-btn" onclick="switchTab('emerging',this)">Emerging</button>
+    </div>
+
+    <div class="treatment-panel active" id="tp-pharmaceutical">
+      <div class="treatment-block">
+        <div class="tr-item"><div class="tr-num">1</div><div class="tr-info"><h4>Antibiotic Therapy</h4><p>Targeted antibiotics selected based on culture sensitivity results to ensure maximum efficacy and minimise resistance development.</p></div></div>
+        <div class="tr-item"><div class="tr-num">2</div><div class="tr-info"><h4>Chemotherapy Protocols</h4><p>Combination cytotoxic drug regimens tailored to cancer type, stage and patient fitness using NCCN-approved protocols and personalised dosing.</p></div></div>
+        <div class="tr-item"><div class="tr-num">3</div><div class="tr-info"><h4>Chronic Disease Management</h4><p>Long-term medication strategies for diabetes, hypertension, heart failure and neurological conditions with regular monitoring and dose titration.</p></div></div>
+        <div class="tr-item"><div class="tr-num">4</div><div class="tr-info"><h4>Multimodal Pain Management</h4><p>Combining analgesics, anti-inflammatories, nerve blocks and adjuvant therapies for acute and chronic pain syndromes with minimal opioid dependence.</p></div></div>
+      </div>
+    </div>
+
+    <div class="treatment-panel" id="tp-surgical">
+      <div class="treatment-block">
+        <div class="tr-item"><div class="tr-num">1</div><div class="tr-info"><h4>Minimally Invasive Surgery</h4><p>Laparoscopic and robotic procedures offering smaller incisions, faster recovery and lower complication rates across general, cardiac and orthopedic surgery.</p></div></div>
+        <div class="tr-item"><div class="tr-num">2</div><div class="tr-info"><h4>Organ Transplantation</h4><p>Kidney, liver, heart and lung transplants with advanced immunosuppression protocols that have dramatically improved long-term survival rates.</p></div></div>
+        <div class="tr-item"><div class="tr-num">3</div><div class="tr-info"><h4>Neurosurgical Interventions</h4><p>Brain tumour resection, deep brain stimulation for Parkinson's and spinal decompression guided by intraoperative MRI and neuronavigation.</p></div></div>
+        <div class="tr-item"><div class="tr-num">4</div><div class="tr-info"><h4>Cardiac Surgery</h4><p>Coronary artery bypass grafting (CABG), valve replacement and heart failure devices including LVADs and total artificial hearts.</p></div></div>
+      </div>
+    </div>
+
+    <div class="treatment-panel" id="tp-holistic">
+      <div class="treatment-block">
+        <div class="tr-item"><div class="tr-num">1</div><div class="tr-info"><h4>Physiotherapy & Rehabilitation</h4><p>Structured exercise programs and manual therapy for musculoskeletal conditions, stroke recovery and post-surgical rehabilitation.</p></div></div>
+        <div class="tr-item"><div class="tr-num">2</div><div class="tr-info"><h4>Nutritional Medicine</h4><p>Therapeutic dietary interventions for celiac disease, inflammatory bowel disease, metabolic syndrome and food-related allergies.</p></div></div>
+        <div class="tr-item"><div class="tr-num">3</div><div class="tr-info"><h4>Mind-Body Therapies</h4><p>Cognitive behavioural therapy (CBT), mindfulness-based stress reduction and biofeedback for chronic pain, anxiety and immune modulation.</p></div></div>
+        <div class="tr-item"><div class="tr-num">4</div><div class="tr-info"><h4>Herbal & Complementary</h4><p>Evidence-based herbal interventions — Ashwagandha for stress, Turmeric (curcumin) for inflammation, and Ginger for nausea — as adjuncts to conventional care.</p></div></div>
+      </div>
+    </div>
+
+    <div class="treatment-panel" id="tp-emerging">
+      <div class="treatment-block">
+        <div class="tr-item"><div class="tr-num">1</div><div class="tr-info"><h4>CAR-T Cell Immunotherapy</h4><p>Engineering a patient's own T-cells to recognise and destroy cancer cells, showing durable remissions in blood cancers with remarkable results.</p></div></div>
+        <div class="tr-item"><div class="tr-num">2</div><div class="tr-info"><h4>CRISPR Gene Editing</h4><p>Precisely correcting genetic mutations causing sickle cell disease and hereditary blindness with revolutionary clinical trial outcomes.</p></div></div>
+        <div class="tr-item"><div class="tr-num">3</div><div class="tr-info"><h4>mRNA Therapeutics</h4><p>Beyond vaccines, mRNA technology is being developed to treat cancer, rare genetic diseases and protein-deficiency disorders.</p></div></div>
+        <div class="tr-item"><div class="tr-num">4</div><div class="tr-info"><h4>AI-Driven Drug Discovery</h4><p>Machine learning models that predict drug-target interactions and identify novel therapeutic compounds in months rather than years.</p></div></div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-brand"><div class="logo">MediCare</div><p>Treatment decisions must be made with qualified medical professionals.</p></div>
+    <div class="footer-links"><a onclick="go('home')">Home</a><a onclick="go('diseases')">Diseases</a><a onclick="go('medicine')">Medicine</a></div>
+    <p class="footer-copy">© 2026 MediCare. All rights reserved.</p>
+  </footer>
+</div>
+
+
+
+
+<!-- ══════════════════════════════════════
+   3D CHATBOT LOGO (no backend, hyperlink)
+══════════════════════════════════════ -->
+<div class="bot-fab">
+  <div class="bot-label">💬 Chat with MediCare AI</div>
+  <!-- Replace the href below with your own chatbot URL -->
+  <a href="http://localhost/medimind" target="_blank" rel="noopener noreferrer" title="Open AI Chatbot">
+    <div class="bot-3d">
+      <div class="bot-3d-face">🤖</div>
+      <div class="bot-ring"></div>
+      <div class="bot-ring2"></div>
+    </div>
+  </a>
+</div>
+
+<!-- ══════════════════════════════════════
+   JAVASCRIPT
+══════════════════════════════════════ -->
+<script>
+/* ─── Page Navigation ─── */
+const pages = ['home','diseases','medicine','prevention','cure'];
+function go(id){
+  pages.forEach(p=>{
+    document.getElementById('page-'+p).classList.toggle('active',p===id);
+    const n=document.getElementById('n-'+p);
+    if(n) n.classList.toggle('active',p===id);
+  });
+  window.scrollTo({top:0,behavior:'smooth'});
+  if(id==='medicine') loadMedicines();
+}
+
+/* ─── Theme Toggle ─── */
+const themeIcon = document.getElementById('themeIcon');
+function toggleTheme(){
+  const html=document.documentElement;
+  const isDark=html.getAttribute('data-theme')==='dark';
+  html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+  themeIcon.textContent = isDark ? '☀️' : '🌙';
+  localStorage.setItem('mc-theme', isDark ? 'light' : 'dark');
+}
+(function(){
+  const saved=localStorage.getItem('mc-theme');
+  if(saved){
+    document.documentElement.setAttribute('data-theme',saved);
+    themeIcon.textContent = saved==='light' ? '☀️' : '🌙';
+  }
+})();
+
+/* ─── Treatment Tabs ─── */
+function switchTab(id,btn){
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.treatment-panel').forEach(p=>p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('tp-'+id).classList.add('active');
+}
+
+/* ─── Medicine DB / Search ─── */
+let medPage=1, medTotal=0, medPages=1;
+let medQ='', medCat='';
+
+function loadMedicines(page){
+  medPage = page || 1;
+  medQ   = document.getElementById('medQ').value.trim();
+  medCat = document.getElementById('medCat').value;
+
+  const resultEl = document.getElementById('medResult');
+  resultEl.innerHTML = '<div class="loading-row"><div class="spinner"></div> Searching medicines...</div>';
+  document.getElementById('medPag').style.display='none';
+
+  const params = new URLSearchParams({q:medQ, cat:medCat, page:medPage});
+
+  fetch('api_medicines.php?'+params)
+    .then(r=>r.json())
+    .then(data=>{
+      if(!data.success){
+        document.getElementById('dbNotice').style.display='flex';
+        renderDemoMedicines();
+        return;
+      }
+      medTotal = data.total;
+      medPages = data.pages;
+      renderTable(data.data);
+      renderPagination();
+    })
+    .catch(()=>{
+      document.getElementById('dbNotice').style.display='flex';
+      renderDemoMedicines();
+    });
+}
+
+function searchMed(){ loadMedicines(1); }
+
+function renderTable(meds){
+  const el=document.getElementById('medResult');
+  if(!meds.length){
+    el.innerHTML=`<div class="no-result"><div class="icon">🔍</div><p>No medicines found. Try a different search term or category.</p></div>`;
+    return;
+  }
+  let html=`<div class="med-table-wrap"><table class="med-table">
+    <thead><tr>
+      <th>#</th>
+      <th>Medicine Name</th>
+      <th>Category</th>
+      <th>Form / Strength</th>
+      <th>Price / Tablet</th>
+      <th>Manufacturer</th>
+    </tr></thead><tbody>`;
+  meds.forEach((m,i)=>{
+    const n=(medPage-1)*12+(i+1);
+    html+=`<tr>
+      <td style="color:var(--text-sub);font-size:.8rem">${n}</td>
+      <td><strong>${esc(m.medicine_name)}</strong><div class="generic-name">${esc(m.generic_name)}</div></td>
+      <td><span class="cat-badge">${esc(m.category)}</span></td>
+      <td style="color:var(--text-muted);font-size:.85rem">${esc(m.dosage_form)}${m.strength?' · '+esc(m.strength):''}</td>
+      <td class="price-cell">${parseFloat(m.price_per_tablet).toFixed(2)} <span style="font-size:.75rem;font-weight:400;color:var(--text-muted)">${esc(m.currency)}</span></td>
+      <td style="color:var(--text-muted);font-size:.83rem">${esc(m.manufacturer)}</td>
+    </tr>`;
+  });
+  html+=`</tbody></table></div>`;
+  el.innerHTML=html;
+}
+
+function renderPagination(){
+  const pag=document.getElementById('medPag');
+  pag.style.display=medPages>1?'flex':'none';
+  document.getElementById('pagInfo').textContent=`Showing ${(medPage-1)*12+1}–${Math.min(medPage*12,medTotal)} of ${medTotal} medicines`;
+  const btns=document.getElementById('pagBtns');
+  let html=`<button class="pag-btn" onclick="loadMedicines(${medPage-1})" ${medPage<=1?'disabled':''}>← Prev</button>`;
+  const start=Math.max(1,medPage-2), end=Math.min(medPages,medPage+2);
+  for(let p=start;p<=end;p++){
+    html+=`<button class="pag-btn${p===medPage?' active':''}" onclick="loadMedicines(${p})">${p}</button>`;
+  }
+  html+=`<button class="pag-btn" onclick="loadMedicines(${medPage+1})" ${medPage>=medPages?'disabled':''}>Next →</button>`;
+  btns.innerHTML=html;
+}
+
+/* ─── Demo data fallback (no DB) ─── */
+function renderDemoMedicines(){
+  const demo=[
+    {medicine_name:'Napa',generic_name:'Paracetamol',category:'Analgesic',dosage_form:'Tablet',strength:'500mg',price_per_tablet:'1.20',currency:'TK',manufacturer:'Beximco Pharma'},
+    {medicine_name:'Amoxil',generic_name:'Amoxicillin',category:'Antibiotic',dosage_form:'Capsule',strength:'500mg',price_per_tablet:'8.50',currency:'TK',manufacturer:'Square Pharma'},
+    {medicine_name:'Atova',generic_name:'Atorvastatin',category:'Cardiovascular',dosage_form:'Tablet',strength:'20mg',price_per_tablet:'9.00',currency:'TK',manufacturer:'Square Pharma'},
+    {medicine_name:'Glucophage',generic_name:'Metformin HCl',category:'Antidiabetic',dosage_form:'Tablet',strength:'500mg',price_per_tablet:'4.00',currency:'TK',manufacturer:'Square Pharma'},
+    {medicine_name:'Sertraline',generic_name:'Sertraline HCl',category:'Antidepressant',dosage_form:'Tablet',strength:'50mg',price_per_tablet:'15.00',currency:'TK',manufacturer:'Square Pharma'},
+    {medicine_name:'Omeprazole',generic_name:'Omeprazole',category:'GI / PPI',dosage_form:'Capsule',strength:'20mg',price_per_tablet:'5.00',currency:'TK',manufacturer:'Square Pharma'},
+    {medicine_name:'Ibuprofen',generic_name:'Ibuprofen',category:'NSAID',dosage_form:'Tablet',strength:'400mg',price_per_tablet:'4.00',currency:'TK',manufacturer:'Square Pharma'},
+    {medicine_name:'Salbutamol',generic_name:'Salbutamol Sulfate',category:'Respiratory',dosage_form:'Tablet',strength:'4mg',price_per_tablet:'2.00',currency:'TK',manufacturer:'Square Pharma'},
+  ];
+  medTotal=demo.length; medPages=1;
+  renderTable(demo);
+}
+
+function esc(s){ const d=document.createElement('div');d.textContent=s||'—';return d.innerHTML; }
+
+
+/* Nav scroll style */
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').style.boxShadow=
+    window.scrollY>10?'0 4px 30px rgba(0,0,0,.18)':'none';
+});
+</script>
+</body>
+</html>
